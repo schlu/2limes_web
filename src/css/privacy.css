@@ -1,0 +1,43 @@
+body {
+  overflow-x: hidden;
+}
+.pi-body {
+  background-color: #edffdf;
+}
+.pi-wrapper {
+  flex: 1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.full-center {
+  flex-direction: row;
+  align-self: stretch;
+  justify-content: center;
+}
+.pi-container {
+  flex: 1;
+  max-width: 900px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  flex-direction: column;
+  padding: 7px;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.pi-wrapper * div,
+.pi-wrapper div {
+  display: flex;
+}
+
+.debug {
+  background-color: #f00;
+}
+.pi-wrapper * p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}

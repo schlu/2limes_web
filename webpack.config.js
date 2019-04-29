@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/index.js',
-    yorecuerdo: './src/yo-recuerdo/index.js'
+    yorecuerdo: './src/yo-recuerdo/index.js',
+    privacy: './src/privacy.js'
   },
   output: {
     path: __dirname,
@@ -35,6 +36,11 @@ module.exports = {
       chuncks: ["yorecuerdo"],
       template: './src/yo-recuerdo/index.html',
       filename: 'yo-recuerdo.html'
+    }),
+    new HtmlWebpackPlugin({
+      chuncks: ["privacy"],
+      template: './src/privacy.html',
+      filename: 'privacy.html'
     })
   ]
 };
